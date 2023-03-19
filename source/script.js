@@ -1,5 +1,5 @@
 const title = document.querySelector('.hero h1');
-const text = ["Happy Day Care"];
+const text = ["Happy Day Care", "Tailored Care for your Child", "Flexible Hours", "Ages 0-11 Care"];
 let b = 0;
 
 function type() {
