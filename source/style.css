@@ -237,7 +237,7 @@ footer {
 	}
 }
 
-.location-button, .review-button {
+.location-button, .review-button, .email-button {
     background-color: #ffffff00;
     color: #000000;
     border: 3px solid #000000;
@@ -250,7 +250,7 @@ footer {
     margin-top: 20px;
 }
 
-.location-button:hover, .review-button:hover {
+.location-button:hover, .review-button:hover, .email-button:hover {
     transform: translateY(-5px); /* Move the button up by 5 pixels */
 }
 
