@@ -1,26 +1,30 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body::-webkit-scrollbar {
-    width: 20px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #CEAB93;        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.293);    /* color of the scroll thumb */
+    width: 20px;
+    /* width of the entire scrollbar */
+}
 
-  }
+body::-webkit-scrollbar-track {
+    background: #CEAB93;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.293);
+    /* color of the scroll thumb */
+
+}
 
 /*  FIRST PAGE */
 body {
-	font-family: monospace;
+    font-family: monospace;
     font-size: xx-large;
-	min-height: 100vh; /* set the minimum height of the body to 100% of the viewport height */
+    min-height: 100vh;
+    /* set the minimum height of the body to 100% of the viewport height */
 }
 
 main {
@@ -28,15 +32,15 @@ main {
     min-height: 100vh;
     font-family: monospace;
 
-    background: linear-gradient(to left, #E3CAA5,#AD8B73);
+    background: linear-gradient(to left, #E3CAA5, #AD8B73);
 }
 
 
 
 footer {
-	background: linear-gradient(to right, #AD8B73, #E3CAA5);
-	padding: 20px;
-	box-shadow: 0 0 10px rgba(11, 7, 7, 0.1);
+    background: linear-gradient(to right, #AD8B73, #E3CAA5);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(11, 7, 7, 0.1);
     text-align: center;
 }
 
@@ -45,41 +49,46 @@ footer {
     background: linear-gradient(to right, #AD8B73, #E3CAA5);
     width: 100%;
     height: 100vh;
-    position: relative; /* add position relative to create stacking context for child elements */
-    top: 0; /* add this line to position the element at the top of the screen */
+    position: relative;
+    /* add position relative to create stacking context for child elements */
+    top: 0;
+    /* add this line to position the element at the top of the screen */
 }
 
 
 /* For the top menu bar */
 .banner-text {
     margin-top: 50px;
-	width: 100%;
-	position: absolute;
-	z-index: 1;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
     background-color: #1fd19958;
 }
 
 .banner-text ul {
-  height: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center; /* vertically center the items */
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* vertically center the items */
 }
 
 .banner-text ul li {
-  flex: 1; /* distribute the available space equally */
-  display: inline-block;
-  padding: 40px 15px;
-  text-align: center; /* center the text */
+    flex: 1;
+    /* distribute the available space equally */
+    display: inline-block;
+    padding: 40px 15px;
+    text-align: center;
+    /* center the text */
 }
 
 .banner-text ul li a {
-	text-decoration: none;
-	color: #000000;
-	text-transform: capitalize;
-	font-size: 30px;
-	padding: 5px 10px;
-	font-family: monospace;
+    text-decoration: none;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 5px 10px;
+    font-family: monospace;
 }
 
 .banner-text ul li a:hover {
@@ -88,13 +97,13 @@ footer {
 }
 
 .banner-text h2 {
-	text-align: center;
-	color: #000000;
-	font-size: 50px;
-	margin-top: 15%;
-	margin-bottom: 15px;
-	font-family: berkshire swash;
-	letter-spacing: 3px;
+    text-align: center;
+    color: #000000;
+    font-size: 50px;
+    margin-top: 15%;
+    margin-bottom: 15px;
+    font-family: berkshire swash;
+    letter-spacing: 3px;
 }
 
 .banner-text ul li.banner-name {
@@ -107,36 +116,39 @@ footer {
 }
 
 .banner-text p {
-	text-align: center;
-	font-size: 18px;
-	width: 35%;
-	margin: auto;
-	color: #000000;
-	line-height: 1.7;
+    text-align: center;
+    font-size: 18px;
+    width: 35%;
+    margin: auto;
+    color: #000000;
+    line-height: 1.7;
 }
 
 
 /* For the cards with info */
 .card-container {
-    margin-top: 50px; /* adjust this value to match the height of the banner */
+    margin-top: 50px;
+    /* adjust this value to match the height of the banner */
     position: relative;
     /* z-index: 0; */
     /* display: flex; */
-  }
-  
+}
 
-.card, .card-inner {
-	margin-top: 50px;
-	background-color: #cbe4de08;
-	border-radius: 10px;
-	padding: 50px;
-	margin-bottom: 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	position: relative;
-	z-index: 1;
+
+.card,
+.card-inner {
+    margin-top: 50px;
+    background-color: #cbe4de08;
+    border-radius: 10px;
+    padding: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
     text-align: center;
     font-family: monospace "Monaco";
 }
+
 .card-inner:hover {
     transform: scale(1.02);
 }
@@ -154,7 +166,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
-  
+
 .hero h1 {
     font-size: 3rem;
     text-align: center;
@@ -163,80 +175,82 @@ footer {
 
 
 .box-area {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .box-area li {
-	position: absolute;
-	display: block;
-	list-style: none;
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	background-color: rgba(255, 255, 255, 0.2);
-	animation: animate 20s linear infinite;
-	bottom: -150px;
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
 }
 
 .box-area li:nth-child(1) {
-	left: 86%;
-	animation-delay: 0s;
+    left: 86%;
+    animation-delay: 0s;
 }
 
 .box-area li:nth-child(2) {
-	left: 12%;
-	animation-delay: 1.5s;
-	animation-duration: 10s;
+    left: 12%;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
 }
 
 .box-area li:nth-child(3) {
-	left: 70%;
-	animation-delay: 5.5s;
+    left: 70%;
+    animation-delay: 5.5s;
 }
 
 .box-area li:nth-child(4) {
-	left: 42%;
-	animation-delay: 0s;
-	animation-duration: 15s;
+    left: 42%;
+    animation-delay: 0s;
+    animation-duration: 15s;
 }
 
 .box-area li:nth-child(5) {
-	left: 65%;
-	animation-delay: 0s;
+    left: 65%;
+    animation-delay: 0s;
 }
 
 .box-area li:nth-child(6) {
-	left: 23%;
-	animation-delay: 3.5s;
+    left: 23%;
+    animation-delay: 3.5s;
 }
 
 .box-area li:nth-child(7) {
-	left: 89%;
-	animation-delay: 8s;
+    left: 89%;
+    animation-delay: 8s;
 }
 
 .box-area li:nth-child(8) {
-	left: 35%;
-	animation-delay: 10s;
+    left: 35%;
+    animation-delay: 10s;
 }
 
 @keyframes animate {
-	0% {
-		transform: translateY(0) scale(0);
-	}
+    0% {
+        transform: translateY(0) scale(0);
+    }
 
-	100% {
-		transform: translateY(-2000px) scale(2);
-		opacity: 0;
-	}
+    100% {
+        transform: translateY(-2000px) scale(2);
+        opacity: 0;
+    }
 }
 
-.location-button, .review-button, .email-button {
+.location-button,
+.review-button,
+.email-button {
     background-color: #ffffff00;
     color: #000000;
     border: 3px solid #000000;
@@ -249,8 +263,11 @@ footer {
     margin-top: 20px;
 }
 
-.location-button:hover, .review-button:hover, .email-button:hover {
-    transform: translateY(-5px); /* Move the button up by 5 pixels */
+.location-button:hover,
+.review-button:hover,
+.email-button:hover {
+    transform: translateY(-5px);
+    /* Move the button up by 5 pixels */
 }
 
 .service-list {
